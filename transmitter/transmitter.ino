@@ -34,5 +34,5 @@ void loop()
 void send (char *message)
 {
   vw_send((uint8_t *)message, strlen(message));
-  vw_wait_tx(); // Wait until the whole message is gone
+  vw_wait_tx();
 }

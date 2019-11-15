@@ -28,7 +28,7 @@ void loop()
     send("f");
     delay(1);
   }
-  delay(100);
+  delay(50);
 }
 
 void send (char *message)

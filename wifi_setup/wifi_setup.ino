@@ -3,7 +3,7 @@
 
 #define led 12
 
-char ssid[] = "spotty";
+char ssid[] = "tigerSpot2019";
 char pass[] = "nothing1";
 int keyIndex = 0;
 
@@ -58,13 +58,13 @@ void loop() {
             if(readString.indexOf("?lighton") > 0)
             {
               digitalWrite(led, HIGH);
-              delay(100);
+              delay(50);
             }
             else{
               if(readString.indexOf("?lightoff") > 0)
               {
                 digitalWrite(led, LOW);    
-                delay(100);
+                delay(50);
               }
             }           
             readString="";

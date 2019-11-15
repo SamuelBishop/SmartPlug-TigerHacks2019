@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       
+<!--        <script defer src="javascript.js"></script>-->      
+
+</head>    
+<body>
+        <button onclick="on()">on</button>
+        <button onclick="off()">off</button>
+        <form>
+        <input id="checkbox" type="checkbox" onchange="check()">
+        </form>
+        <script>
+
+    function on(){
+        var url ="http://192.168.43.105/?lighton";
+        document.getElementById("checkbox").checked=true;
+        open(url);
+
+    }
+    function off(){
+        var url2 ="http://192.168.43.105/?lightoff";
+        open(url2);
+    }
+
+//    function alert(){
+//        alert("hello");
+//    }
+//var chk = $('#checkbox');
+
+//chk.on('change', function() {
+//  alert("test");
+//});
+
+function check() {
+//  chk.trigger('click');
+  alert("hello");
+}
+
+</script>
+    </body>
+</html>

@@ -31,11 +31,11 @@ void loop()
 
     if(message[0] == 'o'){
       digitalWrite(led_pin, HIGH);      // turn the LED off 
-      delay(500);                       // wait for half a second
+      delay(50);                       // wait for half a second
     }
     if(message[0] == 'f'){
       digitalWrite(led_pin, LOW);       // turn the LED off 
-      delay(500);// wait for half a second
+      delay(50);// wait for half a second
     }
     
     Serial.println();
